@@ -30,16 +30,16 @@
   <picture>
     <source
       media="(max-width: 639px)"
-      :srcset="makeImgHost('/mobile/bg4-20240126.png?imageMogr2/format/webp')"
+      srcset="https://c.pxhere.com/photos/24/7e/mountain_cloud_sunset_sunrise_mountain_range-19749.jpg!d"
     />
     <source
       media="(min-width: 640px)"
-      :srcset="makeImgHost('/bg4-20240126.jpg?imageMogr2/format/webp')"
+      srcset="https://c.pxhere.com/photos/24/7e/mountain_cloud_sunset_sunrise_mountain_range-19749.jpg!d"
     />
     <img
       class="img-bg"
-      :src="makeImgHost('/bg4-20240126.jpg?imageMogr2/format/webp')"
-      alt="黑金牛奶光美容仪背景图片"
+      src="https://c.pxhere.com/photos/24/7e/mountain_cloud_sunset_sunrise_mountain_range-19749.jpg!d"
+      alt="专业运营"
     />
   </picture>
 </template>
