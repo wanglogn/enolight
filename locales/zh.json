@@ -52,8 +52,19 @@
   "scan_tm": "打开淘宝扫一扫",
   "scan_wx": "打开微信扫一扫",
   "address": "〒103-0025 東京都中央区日本橋茅場町２丁目8−1",
-  "building": "設立",
+  "building": "成立",
   "buildingfortime": "2024年7月8日",
-  "CEO": "代表取締",
-  "CEOname": "李 佳慧"
+  "CEO": "董事长",
+  "CEOname": "李 佳慧",
+  "company": "公司",
+  "name": "姓名",
+  "email": "邮箱",
+  "phone": "电话号码",
+  "inquiry": "询问内容",
+  "estimate": "报价请求",
+  "influencer": "网红名单申请",
+  "service": "关于服务内容",
+  "other": "其他",
+  "message": "留言",
+  "submit": "提交"
 }

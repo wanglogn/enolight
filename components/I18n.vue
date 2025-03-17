@@ -31,7 +31,7 @@ const isMobile = useIsMobile();
 const { setLocale, locale } = useI18n();
 
 const langList = [
-  { name: "English", locale: "en" },
+  { name: "日本語", locale: "ja" },
   { name: "简体中文", locale: "zh" },
 ];
 </script>
