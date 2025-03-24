@@ -9,6 +9,9 @@
       <h3 class="delay-150 sm:text-[24px] text-[14px] font-normal">
         {{ $t("s5_1_1") }}
       </h3>
+      <h3 class="delay-150 sm:text-[24px] text-[14px] font-normal">
+        {{ $t("s5_1_2") }}
+      </h3>
     </div>
 
     <Popover class="delay-500" :type="isMobile ? 'dialog' : 'popover'">

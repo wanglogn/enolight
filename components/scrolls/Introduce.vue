@@ -15,8 +15,6 @@
     <h2 class="delay-[800ms] sm:mb-8 mb-2">{{ $t("s2_3") }}</h2>
     <h2 class="delay-[900ms] sm:mb-20 mb-8">{{ $t("s2_4") }}</h2>
 
-    <!-- <h2 class="delay-1000 sm:mb-8 mb-2">{{ $t("s2_5") }}</h2> -->
-    <!-- <h2 class="delay-[1100ms]">{{ $t("s2_6") }}</h2> -->
   </div>
 
   <picture>

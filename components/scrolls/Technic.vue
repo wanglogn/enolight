@@ -12,51 +12,118 @@ const s3_active_idx = ref(1);
     class="relative animate-show custom-width text-[rgb(131,95,56)] h-full sm:pt-32 pt-14 lg:-translate-y-10 2xl:translate-y-0"
   >
     <div class="delay-500 flex justify-between items-center">
-      <h2 class="sm:text-[50px] text-[22px] font-semibold">
+      <h2 class="sm:text-[20px] text-[12px] font-semibold">
         {{ $t("s3_1") }}
       </h2>
     </div>
+    <div class="delay-[600ms] flex justify-between ">
+      <h2 class="sm:text-[20px] text-[12px] font-semibold">
+        {{ $t("s3_1_2") }}
+      </h2></div>
+      <div class="delay-[700ms] flex justify-between items-center">
+      <h2 class="sm:text-[20px] text-[12px] font-semibold">
+        {{ $t("s3_1_3") }}
+      </h2></div>
 
     <!-- pc主体 -->
+    <!-- 第一段 -->
     <div
-      class="delay-700 mt-[8vh] sm:flex hidden animate-show h-[52vh] bg-white text-[rgb(131,95,56)] rounded-3xl overflow-hidden"
+      class="delay-700 mt-[8vh] sm:flex hidden animate-show h-[62vh] bg-white text-[rgb(131,95,56)] rounded-3xl overflow-hidden"
     >
       <ul class="animate-show grow flex flex-col justify-center p-10 3xl:px-20">
         <li
-          class="delay-[900ms] border-b-2 border-[rgb(131,95,56)]"
+          class="delay-[900ms] "
           :class="{ 'active-toggle': s3_active_idx === 1 }"
           @click="s3_active_idx = 1"
         >
-          <div class="flex justify-between items-center mb-8">
-            <span class="text-2xl font-medium">强脉冲光(IPL)</span>
+          <div class="flex justify-between items-center mb-6">
+            <span class="text-xl font-medium">{{ $t("s3_2_1") }}</span>
             <ChevronUpIcon
               class="w-6 transition"
               :class="{ 'rotate-180': s3_active_idx !== 1 }"
             />
           </div>
           <div class="expander">
-            <div class="expander-content text-lg leading-8">
-              {{ $t("s3_3_1") }}
-              <div class="mb-8"></div>
+            <div class="expander-content text-base leading-8">
+              {{ $t("s3_3_1") }}<br>{{ $t("s3_3_2") }}<br>{{ $t("s3_3_3") }}<br>{{ $t("s3_3_4") }}
+              <div class=""></div>
             </div>
           </div>
         </li>
+
 
         <li
           class="delay-[1000ms]"
           :class="{ 'active-toggle': s3_active_idx === 2 }"
           @click="s3_active_idx = 2"
         >
-          <div class="flex justify-between items-center my-8">
-            <span class="text-2xl font-medium">LED光</span>
+          <div class="flex justify-between items-center my-6">
+            <span class="text-xl font-medium">{{ $t("s3_4") }}</span>
             <ChevronUpIcon
               class="w-6 transition"
               :class="{ 'rotate-180': s3_active_idx !== 2 }"
             />
           </div>
           <div class="expander">
-            <div class="expander-content text-lg leading-8">
-              {{ $t("s3_4_1") }}
+            <div class="expander-content text-base leading-8">
+              {{ $t("s3_4_1") }}<br>{{ $t("s3_4_2") }}
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="delay-[1100ms]"
+          :class="{ 'active-toggle': s3_active_idx === 3 }"
+          @click="s3_active_idx = 3"
+        >
+          <div class="flex justify-between items-center my-6">
+            <span class="text-xl font-medium">{{ $t("s3_5") }}</span>
+            <ChevronUpIcon
+              class="w-6 transition"
+              :class="{ 'rotate-180': s3_active_idx !== 3 }"
+            />
+          </div>
+          <div class="expander">
+            <div class="expander-content text-base leading-7">
+              {{ $t("s3_5_1") }}<br>{{ $t("s3_5_2") }}
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="delay-[1200ms]"
+          :class="{ 'active-toggle': s3_active_idx === 4 }"
+          @click="s3_active_idx = 4"
+        >
+          <div class="flex justify-between items-center my-6">
+            <span class="text-xl font-medium">{{ $t("s3_6") }}</span>
+            <ChevronUpIcon
+              class="w-6 transition"
+              :class="{ 'rotate-180': s3_active_idx !== 4 }"
+            />
+          </div>
+          <div class="expander">
+            <div class="expander-content text-base leading-8">
+              {{ $t("s3_6_1") }}<br>{{ $t("s3_6_2") }}
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="delay-[1300ms]"
+          :class="{ 'active-toggle': s3_active_idx === 5 }"
+          @click="s3_active_idx = 5"
+        >
+          <div class="flex justify-between items-center my-6">
+            <span class="text-xl font-medium">{{ $t("s3_7") }}</span>
+            <ChevronUpIcon
+              class="w-6 transition"
+              :class="{ 'rotate-180': s3_active_idx !== 5 }"
+            />
+          </div>
+          <div class="expander">
+            <div class="expander-content text-base leading-8">
+              {{ $t("s3_7_1") }}<br>{{ $t("s3_7_2") }}
             </div>
           </div>
         </li>
@@ -77,12 +144,12 @@ const s3_active_idx = ref(1);
         class="flex flex-col justify-center items-center text-[19px] font-medium"
       >
         <li
-          class="border-b-2 border-[rgb(131,95,56)] pb-4 mb-8"
+          class="border-b-2 border-[rgb(131,95,56)] pb-4 mb-6 w-full"
           :class="{ 'active-toggle': s3_active_idx === 1 }"
           @click="s3_active_idx = 1"
         >
           <div class="flex justify-between items-center">
-            <span>强脉冲光(IPL)</span>
+            <span>{{ $t("s3_2_1") }}</span>
             <ChevronUpIcon
               class="w-6 transition"
               :class="{ 'rotate-180': s3_active_idx !== 1 }"
@@ -92,17 +159,8 @@ const s3_active_idx = ref(1);
             <div
               class="expander-content text-[13px] font-normal leading-[21px]"
             >
-              {{ $t("s3_3_1") }}
-              <img
-                loading="lazy"
-                class="w-full mt-6 mb-3"
-                :src="
-                  makeImgHost(
-                    `/mobile/s3-ipl-20231212.webp?imageMogr2/quality/50`
-                  )
-                "
-                alt="强脉冲光的描述图片"
-              />
+              {{ $t("s3_3_1") }}<br>{{ $t("s3_3_2") }}
+              
             </div>
           </div>
         </li>
@@ -112,7 +170,7 @@ const s3_active_idx = ref(1);
           @click="s3_active_idx = 2"
         >
           <div class="flex justify-between items-center">
-            <span>LED光</span>
+            <span>{{ $t("s3_4") }}</span>
             <ChevronUpIcon
               class="w-6 transition"
               :class="{ 'rotate-180': s3_active_idx !== 2 }"
@@ -123,17 +181,8 @@ const s3_active_idx = ref(1);
               class="expander-content text-[13px] font-normal leading-[21px]"
             >
               <div class="pt-4"></div>
-              {{ $t("s3_4_1") }}
-              <img
-                loading="lazy"
-                class="w-full mt-6"
-                :src="
-                  makeImgHost(
-                    `/mobile/s3-led-20231212.webp?imageMogr2/quality/50`
-                  )
-                "
-                alt="LED光的描述图片"
-              />
+              {{ $t("s3_4_1") }}<br>{{ $t("s3_4_2") }}
+              
             </div>
           </div>
         </li>

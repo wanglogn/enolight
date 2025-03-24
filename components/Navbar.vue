@@ -64,30 +64,6 @@
     </div>
 
     <div class="flex items-center space-x-5">
-      <!-- pc端联系方式 -->
-      <ul class="hidden space-x-4 sm:flex">
-        <Popover as="li" v-for="item in contactList" :key="item.name">
-          <img
-            class="w-[32px]"
-            :class="{ invert: isInvert }"
-            :src="item.icon_img"
-            :alt="item.name + '联系方式'"
-          />
-          <template #content>
-            <div class="bg-black w-[78px] p-1 rounded-md">
-              <img
-                class="rounded-[3px]"
-                :src="item.qr_img"
-                :alt="item.name + '二维码'"
-              />
-              <span class="block text-white text-center text-[10px] mt-1">{{
-                $t(item.qr_text)
-              }}</span>
-            </div>
-          </template>
-        </Popover>
-      </ul>
-
       <I18n
         class="sm:relative absolute left-0"
         :class="{ invert: [3, 7].includes(currentPage) }"
@@ -152,38 +128,6 @@
             </template>
           </li>
         </ul>
-
-        <!-- 联系方式 -->
-        <ul class="flex items-center mt-5 pb-8 space-x-8">
-          <Popover
-            as="li"
-            type="dialog"
-            v-for="item in contactList"
-            :key="item.name"
-          >
-            <div
-              class="w-[39px] h-[39px] rounded-full bg-black flex justify-center items-center"
-            >
-              <img
-                class="w-[34px]"
-                :src="item.icon_img"
-                :alt="item.name + '联系方式'"
-              />
-            </div>
-            <template #content>
-              <div class="bg-black w-[160px] p-2 rounded-md">
-                <img
-                  class="rounded-md"
-                  :src="item.qr_img"
-                  :alt="item.name + '二维码'"
-                />
-                <span class="block text-white text-center text-base mt-2">{{
-                  $t(item.qr_text)
-                }}</span>
-              </div>
-            </template>
-          </Popover>
-        </ul>
       </div>
     </div>
   </nav>
@@ -211,19 +155,19 @@ const navList = [
         name: "nav_2_1",
         page: 3,
       },
-      // {
-      //   name: "nav_2_2",
-      //   page: 3,
-      // },
+      {
+        name: "nav_3_1",
+        page: 4,
+      },
+      {
+        name: "nav_3_2",
+        page: 5,
+      },
     ],
   },
   {
     name: "nav_3",
     children: [
-      {
-        name: "nav_3_1",
-        page: 4,
-      },
       {
         name: "nav_3_2",
         page: 5,
@@ -243,33 +187,6 @@ const navList = [
       },
     ],
   },
-];
-
-const contactList = [
-  // {
-  //   name: "快手",
-  //   icon_img: "/nav-ks.png",
-  //   qr_img: "/qr/wx.jpg",
-  //   qr_text: "scan_ks",
-  // },
-  // {
-  //   name: "抖音",
-  //   icon_img: "/nav-dy.png",
-  //   qr_img: "/qr/wx.jpg",
-  //   qr_text: "scan_dy",
-  // },
-  // {
-  //   name: "天猫",
-  //   icon_img: "/nav-tm.png",
-  //   qr_img: "/qr/wx.jpg",
-  //   qr_text: "scan_tm",
-  // },
-  // {
-  //   name: "微信",
-  //   icon_img: "/nav-wx.png",
-  //   qr_img: "/qr/wx.jpg",
-  //   qr_text: "scan_wx",
-  // },
 ];
 
 const isCollapse = ref(true);

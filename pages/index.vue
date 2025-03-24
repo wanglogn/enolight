@@ -58,11 +58,13 @@ import Footer from "~/components/scrolls/Footer.vue";
 import IconUp from "~/assets/icons/up.svg";
 import { usePageNavigation } from "~/hooks/usePageNavigation";
 import { useWindowHeight } from "~/hooks/useWindowHeight";
+import useImgHost from "~/hooks/useImgHost";
 // const { locale } = useI18n();
 const { setTotalPages, goToPage, currentPage, adjustPagePosition } =
   usePageNavigation();
 
 const innerHeight = useWindowHeight();
+const { makeImgHost } = useImgHost();
 
 const scrollCompoents = [
   Main,
