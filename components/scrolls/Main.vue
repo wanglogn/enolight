@@ -19,55 +19,30 @@
     </h1>
   </div>
 
-  <!-- <picture>
-    <source
-      media="(max-width: 639px)"
-      width="750"
-      height="1420"
-      :srcset="
-        makeImgHost(
-          '/mobile/bg-1-20231127.jpg?imageMogr2/format/webp/quality/50/blur/3/resize/thumbnail/75x142'
-        )
-      "
-    />
-    <source
-      media="(min-width: 640px)"
-      width="1920"
-      height="1080"
-      :srcset="
-        makeImgHost(
-          '/bg1-20231212.jpg?imageMogr2/format/webp/quality/50/blur/3/resize/thumbnail/192x108'
-        )
-      "
-    />
-    <img
-      class="img-bg"
-      :src="
-        makeImgHost(
-          '/bg1-20231212.jpg?imageMogr2/format/webp/quality/50/blur/3/resize/thumbnail/192x108'
-        )
-      "
-      alt="循光，自发光占位背景图片"
-    />
-  </picture> -->
+  
 
   <picture>
     <source
       media="(max-width: 639px)"
       srcset="
-        https://c.pxhere.com/photos/e3/33/new_york_city_brooklyn_bridge_night_skyline_new_york_usa_america_city-971483.jpg!d
+        https://images.pexels.com/photos/251603/pexels-photo-251603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
       "
+      alt="enolight首页背景图片_手机版"
     />
+    
+    
     <source
       media="(min-width: 640px)"
       srcset="
-        https://c.pxhere.com/photos/e3/33/new_york_city_brooklyn_bridge_night_skyline_new_york_usa_america_city-971483.jpg!d
+      https://images.pexels.com/photos/251603/pexels-photo-251603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+        
       "
+      alt="enolight首页背景图片_电脑版"
     />
     <img
       class="img-bg"
-      src="https://c.pxhere.com/photos/e3/33/new_york_city_brooklyn_bridge_night_skyline_new_york_usa_america_city-971483.jpg!d"
-      alt="循光，自发光背景图片"
+      src="https://images.pexels.com/photos/251603/pexels-photo-251603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt="low网速版"
     />
   </picture>
 </template>
