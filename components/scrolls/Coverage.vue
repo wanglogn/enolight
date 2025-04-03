@@ -1,79 +1,49 @@
 <template>
   <div
-    class="relative custom-width sm:text-6xl font-bold text-3xl text-white flex flex-col justify-center items-center h-full animate-show"
+    class="relative animate-show custom-width text-black h-full flex-col justify-center items-start "
   >
     <h2
-      class="delay-[600ms] font-semibold sm:mb-6 mb-4 delay-500 sm:text-[50px] text-2xl"
+      class="delay-[600ms] font-normal text-[30px] delay-500 sm:text-[40px] pt-40 pt-14 border-b-2 pb-4"
     >
-      {{ $t("s6_hero") }}
+      {{ $t("company_conent") }}
     </h2>
-    <h2
-      class="delay-[700ms] font-semibold sm:mb-6 mb-4 delay-500 sm:text-[30px] text-2xl"
-    >
-      {{ $t("address") }}
-    </h2>
-    <h2
-      class="delay-[800ms] font-semibold sm:mb-6 mb-4 delay-500 sm:text-[50px] text-2xl"
-    >
-      {{ $t("building") }}
-    </h2>
-    <h2
-      class="delay-[900ms] font-semibold sm:mb-6 mb-4 delay-500 sm:text-[30px] text-2xl"
-    >
-      {{ $t("buildingfortime") }}
-    </h2>
-    <h2
-      class="delay-[1000ms] font-semibold sm:mb-6 mb-4 delay-500 sm:text-[50px] text-2xl"
-    >
-      {{ $t("CEO") }}
-    </h2>
-    <h2
-      class="delay-[1100ms] font-semibold sm:mb-6 mb-4 delay-500 sm:text-[30px] text-2xl"
-    >
-      {{ $t("CEOname") }}
-    </h2>
-    <div class="relative sm:w-[406px] w-[280px] delay-700">
-      <form @submit.prevent="handleSearch">
-        <!-- <input
-          @focus="adjustPagePosition"
-          @blur="handleInputBlur"
-          class="text-xs p-3 pr-20 bg-white rounded-[24px] w-full sm:h-[48px] h-[43px] text-black outline-none border-4 focus:border-[#DAC7B7] border-white"
-          type="search"
-          v-model="codeInput"
-          :placeholder="$t('s6_placeholder')"
-          required
-        /> -->
 
-        <!-- <button
-          type="submit"
-          :class="codeInput ? 'text-white' : 'text-[rgba(255,255,255,0.5)]'"
-          class="placeholder:font-normal placeholder:text-sm text-sm bg-black h-[32px] sm:px-5 px-4 absolute sm:right-3 right-2 sm:top-8 top-2 cursor-pointer rounded-[17px]"
-        >
-          确定
-        </button> -->
-      </form>
+     <!-- 标题 -->
+    
+  <div class="flex flex-row justify-start items-start  pt-10">
+    <div class="flex flex-col w-[150px] gap-y-14 sm:[300px] sm:gap-y-12 animate-show">
+      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg ">
+        {{ $t("company_name") }}
+      </div>
+      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
+        {{ $t("IP") }}
+      </div>
+      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
+        {{ $t("CEO") }}
+      </div>
+      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
+        {{ $t("plus1") }}
+      </div>
+    </div>
+
+    <!-- 内容 -->
+    <div class="flex flex-col  gap-y-8 w-[250px] sm:w-full sm:gap-y-10 animate-show">
+      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
+        {{ $t("s6_hero") }}
+      </div>
+      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
+        {{ $t("address1") }}<br>{{ $t("address2") }}
+      </div>
+      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
+        {{ $t("CEOname") }}
+      </div>
+      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
+        {{ $t("plus1-1") }}
+      </div>
+
     </div>
   </div>
-
-  <picture>
-    <source
-      media="(max-width: 639px)"
-      srcset="
-        https://c.pxhere.com/photos/ce/41/skyline_tokyo_roppongi_japon-318009.jpg!d
-      "
-    />
-    <source
-      media="(min-width: 640px)"
-      srcset="
-        https://c.pxhere.com/photos/ce/41/skyline_tokyo_roppongi_japon-318009.jpg!d
-      "
-    />
-    <img
-      class="img-bg"
-      src="https://c.pxhere.com/photos/ce/41/skyline_tokyo_roppongi_japon-318009.jpg!d"
-      alt="公司地址"
-    />
-  </picture>
+  </div>
 </template>
 
 <script setup>
