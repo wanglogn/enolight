@@ -1,52 +1,40 @@
 <template>
   <div
-    class="relative animate-show custom-width text-[#E9DFD6] h-full flex justify-between items-start sm:pt-40 pt-14"
+    class="relative animate-show custom-width text-[#E9DFD6] h-full flex justify-between items-start sm:pt-40 pt-14 text-black"
   >
     <div class="delay-500">
       <h2 class="sm:text-[50px] text-[22px] font-semibold mb-1 sm:mb-3">
-        {{ $t("s5_1") }}
+        {{ $t("s代表介绍") }}
       </h2>
       <h3 class="delay-150 sm:text-[24px] text-[14px] font-normal">
-        {{ $t("s5_1_1") }}
-      </h3>
-      <h3 class="delay-150 sm:text-[24px] text-[14px] font-normal">
-        {{ $t("s5_1_2") }}
+        {{ $t("s代表介绍") }}
       </h3>
     </div>
-
-    <Popover class="delay-500" :type="isMobile ? 'dialog' : 'popover'">
-      <template #content>
-        <div class="bg-black w-[120px] p-2 rounded-md">
-          <img
-            class="sm:rounded-md rounded-[3px]"
-            src="/qr/wx.jpg"
-            alt="二维码"
-          />
-          <span class="block text-white text-center text-sm mt-2">{{
-            $t("scan_wx")
-          }}</span>
-        </div>
-      </template>
-    </Popover>
-  </div>
+    
+    <div class="w-1/6">
+      <img
+      class=""
+      src="~assets/enolight代表.jpg"
+      alt="EnoLight代表介绍背景图片"
+      />
+    </div>
+</div>
 
   <picture>
     <source
       media="(max-width: 639px)"
-      srcset="
-        https://c.pxhere.com/photos/03/6a/beverage_blank_coffee_composition_cup_desk_diary_document-934995.jpg!d
-      "
+      srcset="https://user0514.cdnw.net/shared/img/thumb/ai20246130000021image_TP_V.jpg"
     />
     <source
       media="(min-width: 640px)"
       srcset="
-        https://c.pxhere.com/photos/03/6a/beverage_blank_coffee_composition_cup_desk_diary_document-934995.jpg!d
+        https://user0514.cdnw.net/shared/img/thumb/ai20246130000021image_TP_V.jpg
       "
     />
     <img
       class="img-bg"
-      src="https://c.pxhere.com/photos/03/6a/beverage_blank_coffee_composition_cup_desk_diary_document-934995.jpg!d"
-      alt="服务内容"
+      src="https://user0514.cdnw.net/shared/img/thumb/ai20246130000021image_TP_V.jpg"
+      alt="EnoLight代表介绍背景图片"
     />
   </picture>
 </template>

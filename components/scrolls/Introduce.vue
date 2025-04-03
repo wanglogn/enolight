@@ -1,6 +1,6 @@
 <template>
   <div
-    class="animate-show custom-width font-normal text-sm  flex flex-col text-white translate-y-20 sm:translate-y-40 "
+    class="animate-show custom-width font-normal text-sm  flex flex-col text-black translate-y-20 sm:translate-y-40 "
   >
     <SvgoLogo
       :fontControlled="false"

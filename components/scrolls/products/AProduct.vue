@@ -15,6 +15,18 @@
       <h3 class="delay-150 sm:text-[24px] text-[14px] font-normal">
         {{ $t("s4_2_1") }}
       </h3>
+      <h2 class="sm:text-[50px] text-[22px] font-semibold mb-1 sm:mb-3">
+        {{ $t("s5_1") }}
+      </h2>
+      <h3 class="delay-150 sm:text-[24px] text-[14px] font-normal">
+        {{ $t("s5_1_1") }}
+      </h3>
+      <h2 class="sm:text-[50px] text-[22px] font-semibold mb-1 sm:mb-3">
+        {{ $t("s6_1") }}
+      </h2>
+      <h3 class="delay-150 sm:text-[24px] text-[14px] font-normal">
+        {{ $t("s6_1_1") }}
+      </h3>
     </div>
 
     <Popover class="delay-500" :type="isMobile ? 'dialog' : 'popover'">
@@ -38,9 +50,15 @@
       media="(max-width: 639px)"
       srcset="https://c.pxhere.com/photos/24/7e/mountain_cloud_sunset_sunrise_mountain_range-19749.jpg!d"
     />
-    <source
+    <!-- <source
       media="(min-width: 640px)"
       srcset="https://c.pxhere.com/photos/24/7e/mountain_cloud_sunset_sunrise_mountain_range-19749.jpg!d"
+      alt="网红运营背景图第四页_电脑版"
+    /> -->
+    <source
+      media="(min-width: 640px)"
+        srcset="https://user0514.cdnw.net/shared/img/thumb/AI_24911400044_TP_V.jpg"
+      alt="网红运营背景图第四页_电脑版"
     />
     <img
       class="img-bg"
