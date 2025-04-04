@@ -1,42 +1,24 @@
 <template>
   <div
-    class="relative animate-show custom-width text-[#E9DFD6] h-full flex justify-between items-start sm:pt-40 pt-14 text-black"
+    class="relative animate-show custom-width text-[#E9DFD6] h-full flex flex-col justify-start items-center sm:pt-40 pt-14 text-black sm:flex sm:flex-row sm:justify-center sm:items-center"
   >
-    <div class="delay-500">
-      <h2 class="sm:text-[50px] text-[22px] font-semibold mb-1 sm:mb-3">
-        {{ $t("s代表介绍") }}
-      </h2>
-      <h3 class="delay-150 sm:text-[24px] text-[14px] font-normal">
-        {{ $t("s代表介绍") }}
-      </h3>
-    </div>
-    
-    <div class="w-1/6">
+      <div class=" delay-[600ms] h-[520px] flex flex-col justify-start items-center sm:w-[400px]">
       <img
-      class=""
+      class="w-80 h-100 "
       src="~assets/enolight代表.jpg"
       alt="EnoLight代表介绍背景图片"
       />
+      <h4 class=" delay-[600ms] flex flex-col justify-center items-center" >{{ $t("daibiao3") }}</h4>
     </div>
+    
+    <h3 class="delay-[600ms]  text-[18px] font-normal sm:w-[700px] sm:text-[25px] ">
+        {{ $t("daibiao") }}<br>{{ $t("daibiao1") }}<br>{{ $t("daibiao2") }}
+      </h3>
+    
+       
 </div>
 
-  <picture>
-    <source
-      media="(max-width: 639px)"
-      srcset="https://user0514.cdnw.net/shared/img/thumb/ai20246130000021image_TP_V.jpg"
-    />
-    <source
-      media="(min-width: 640px)"
-      srcset="
-        https://user0514.cdnw.net/shared/img/thumb/ai20246130000021image_TP_V.jpg
-      "
-    />
-    <img
-      class="img-bg"
-      src="https://user0514.cdnw.net/shared/img/thumb/ai20246130000021image_TP_V.jpg"
-      alt="EnoLight代表介绍背景图片"
-    />
-  </picture>
+  
 </template>
 
 <script setup>
