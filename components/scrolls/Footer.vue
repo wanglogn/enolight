@@ -1,7 +1,7 @@
 <template>
   <!-- pc 和 sp 统一的 footer -->
   <div
-    class="custom-width flex flex-col h-full justify-between animate-show pt-20 pb-8"
+    class="custom-width flex flex-col h-full justify-between animate-show sm:pt-20 sm:pb-8 pt-4"
   >
     <span
       class="delay-500 text-[26px] md:text-[26px] text-base font-medium flex items-center before:flex-grow after:flex-grow before:h-[2px] md:before:h-[2px] before:h-[1px] before:bg-black after:h-[2px] md:after:h-[2px] after:h-[1px] after:bg-black before:mr-[58px] md:before:mr-[58px] before:mr-[12px] after:ml-[58px] md:after:ml-[58px] after:ml-[12px]"
@@ -9,7 +9,7 @@
       {{ $t("footer_title_pc") }}</span
     >
     <!-- 用户信息表单 -->
-    <div class="delay-[800ms] mt-5 flex justify-center">
+    <div class="delay-[800ms] sm:mt-5 flex justify-center pt-2">
       <form @submit.prevent="handleSubmit" class="space-y-4 w-full md:w-3/5">
         <div>
           <label for="company" class="block text-sm font-medium text-gray-700">
@@ -63,7 +63,7 @@
           <label class="block text-sm font-medium text-gray-700">{{
             $t("inquiry")
           }}</label>
-          <div class="mt-2 space-y-2">
+          <div class="mt-2 sm:space-y-2 grid grid-rows-2 grid-flow-col gap-2 sm:flex flex-col">
             <div class="flex items-start">
               <input
                 id="estimate"
@@ -126,7 +126,7 @@
             id="message"
             name="message"
             v-model="form.message"
-            rows="4"
+            sm:rows="4"
             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           ></textarea>
         </div>
