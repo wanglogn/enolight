@@ -46,7 +46,7 @@
       </div>
 
       <span class="text-black opacity-50 mb-3"
-        >Copyright &copy; 2023 EnoLight
+        >Copyright &copy; 2025 EnoLight
       </span>
 
       <!-- <div class="text-[rgba(0,0,0,.5)] flex space-x-3">
