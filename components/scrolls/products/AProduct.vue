@@ -1,36 +1,23 @@
 <template>
   <div
-    class="relative animate-show custom-width text-[#FFE4C0] sm:text-[#F6EFE6] h-full flex justify-between items-start sm:pt-40 pt-14"
+    class="relative animate-show custom-width text-[#FFE4C0] sm:text-[#F6EFE6] h-full flex justify-between items-start sm:pt-40 pt-14 "
   >
-    <div class="delay-500">
+    <div class="delay-500 py-20">
       
-      <h3 class="delay-150 sm:text-[24px] text-[14px] font-normal">
+      <h3 class="delay-150 sm:text-[24px] sm:text-[14px] sm:font-normal">
         {{ $t("s4_1_1") }}<br>{{ $t("s4_1_2") }}
       </h3><br>
-      <h2 class="delay-150 sm:text-[24px] text-[14px] font-normal">
+      <h2 class="delay-150 sm:text-[24px] sm:text-[14px] sm:font-normal">
         {{ $t("s4_2") }}
       </h2>
-      <h3 class="delay-150 sm:text-[24px] text-[14px] font-normal">
+      <h3 class="delay-150 sm:text-[24px] sm:text-[14px] sm:font-normal">
         {{ $t("s4_2_1") }}<br>{{ $t("s4_2_2") }}<br>{{ $t("s4_2_3") }}
       </h3>
       
       
     </div>
 
-    <Popover class="delay-500" :type="isMobile ? 'dialog' : 'popover'">
-      <template #content>
-        <div class="bg-black w-[120px] p-2 rounded-md">
-          <img
-            class="sm:rounded-md rounded-[3px]"
-            src="/qr/wx.jpg"
-            alt="二维码"
-          />
-          <span class="block text-white text-center text-sm mt-2">{{
-            $t("scan_wx")
-          }}</span>
-        </div>
-      </template>
-    </Popover>
+    
   </div>
 
   <picture>
