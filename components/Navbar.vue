@@ -114,6 +114,10 @@ const navList = [
         name: "nav_3_1",
         page: 4,
       },
+      {
+        name: "nav_2_2",
+        page: 5,
+      },
 
     ],
   },
@@ -122,17 +126,17 @@ const navList = [
     children: [
       {
         name: "nav_3_2",
-        page: 5,
+        page: 6,
       },
       {
         name: "nav_4_1",
-        page: 6,
+        page: 7,
       },
     ],
   },
   {
     name: "nav_4",
-    page: 7,
+    page: 8,
   },
 ];
 
