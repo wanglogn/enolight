@@ -37,7 +37,7 @@
             visible: currentPage !== 1,
             invisible: currentPage === 1,
           },
-          [3, 7].includes(currentPage) ? 'text-black' : 'text-white',
+          [3, 6 , 7, 8].includes(currentPage) ? 'text-black' : 'text-white',
         ]"
       />
     </div>
@@ -53,6 +53,7 @@ import AProduct from "~/components/scrolls/products/AProduct.vue";
 import BProduct from "~/components/scrolls/products/BProduct.vue";
 import Coverage from "~/components/scrolls/Coverage.vue";
 import Footer from "~/components/scrolls/Footer.vue";
+import Market from "~/components/scrolls/products/ market.vue";
 
 // 其它引入
 import IconUp from "~/assets/icons/up.svg";
@@ -71,9 +72,11 @@ const scrollCompoents = [
   Introduce,
   Technic,
   AProduct,
+  Market,
   BProduct,
   Coverage,
   Footer,
+  
 ];
 
 // 设置页面总数
