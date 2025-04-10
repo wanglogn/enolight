@@ -1,7 +1,7 @@
 <template>
   <nav
     class="nav sm:flex h-[68px] custom-width sm:justify-between justify-end items-center fixed top-0 left-0 right-0 z-40 pointer-events-none"
-    :class="[isInScrollPage && currentPage !== 1 ? 'hidden' : 'flex']">
+    :class="[isInScrollPage && ![1, 2 ,3 ,4,5,6,7,8].includes(currentPage) ? 'hidden' : 'flex']">
     <!-- pc端首页遮盖层 -->
     <div class="nav-linear-mask z-1 fixed h-[68px] w-full left-0 top-0"
       :class="currentPage === 1 && isInScrollPage ? '2xl:block hidden' : 'hidden'"></div>
@@ -47,7 +47,7 @@
 
     <!-- 小屏——下拉菜单按钮 -->
     <ChevronDownIcon @click="toggleCollapse" class="w-6 sm:hidden block z-20"
-      :class="isCollapse ? 'text-white' : 'text-black'" />
+      :class="isCollapse ? 'text-black' : 'text-white'" />
 
     <!-- 小屏——下拉菜单 -->
     <div
