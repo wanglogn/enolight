@@ -4,7 +4,7 @@
     class="custom-width flex flex-col h-full justify-between animate-show sm:pt-20 sm:pb-8 pt-4"
   >
     <span
-      class="delay-500 text-[26px] md:text-[26px] text-base font-medium flex items-center before:flex-grow after:flex-grow before:h-[2px] md:before:h-[2px] before:h-[1px] before:bg-black after:h-[2px] md:after:h-[2px] after:h-[1px] after:bg-black before:mr-[58px] md:before:mr-[58px] before:mr-[12px] after:ml-[58px] md:after:ml-[58px] after:ml-[12px]"
+      class="delay-500 text-[26px] md:text-[26px] text-base font-medium flex items-center before:flex-grow after:flex-grow before:h-[2px] md:before:h-[2px] before:h-[1px] before:bg-black after:h-[2px] md:after:h-[2px] after:h-[1px] after:bg-black before:mr-[58px] md:before:mr-[58px] before:mr-[12px] after:ml-[58px] md:after:ml-[58px] after:ml-[12px] pt-[60px] sm:pt-0"
     >
       {{ $t("footer_title_pc") }}</span
     >
@@ -140,7 +140,7 @@
         </div>
       </form>
     </div>
-    <Copyright class="delay-1000 w-full" />
+    <Copyright class="delay-[800ms] w-full" />
   </div>
 </template>
 
