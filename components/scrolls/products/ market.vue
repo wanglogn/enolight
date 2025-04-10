@@ -1,6 +1,7 @@
 <template>
+  
   <div
-    class="animate-show custom-width font-normal text-sm flex flex-col text-black translate-y-20 sm:translate-y-40"
+    class="animate-show custom-width font-normal text-sm flex flex-col text-black translate-y-20 "
   >
     <h2
       class="delay-700  text-[18px] sm:text-[35px] py-5  font-normal leading-6 sm:leading-[45px]"

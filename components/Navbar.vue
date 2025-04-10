@@ -56,7 +56,7 @@
       <div class="bg-white custom-width pt-[65px]">
         <ul class="flex flex-col">
           <!-- 次级菜单 -->
-          <li class="text-base font-semibold text-black border-b border-black py-[12px]"
+          <li class="text-base font-semibold text-black border-b  py-[12px]"
             v-for="(item, index) in navList" :key="item.name" @click="
               item.children
                 ? toggleMobSubMenu(index)

@@ -3,7 +3,7 @@
     <div class="flex items-center justify-center sm:mb-7 mb-6">
       <SvgoLogo :fontControlled="false" class="sm:h-[20px] h-[15px] text-black" />
     </div>
-    <h1 class="sm:text-[56px] text-[32px] sm:leading-[56px] leading-[32px] font-semibold flex space-x-6 items-center">
+    <h1 class="sm:text-[56px] text-[32px] sm:leading-[56px] leading-[32px]  font-semibold flex space-x-6 items-center">
       <span class="shrink-0">{{ $t("s1_1") }}</span>
       <span class="shrink-0">{{ $t("s1_2") }}</span>
     </h1>

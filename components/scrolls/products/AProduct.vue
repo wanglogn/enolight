@@ -4,13 +4,13 @@
   >
     <div class="delay-500 py-20">
       
-      <h3 class="delay-150 sm:text-[24px] sm:text-[14px] sm:font-normal">
+      <h3 class="delay-600 sm:text-[24px] sm:text-[14px] sm:font-normal">
         {{ $t("s4_1_1") }}<br>{{ $t("s4_1_2") }}
       </h3><br>
-      <h2 class="delay-150 sm:text-[24px] sm:text-[14px] sm:font-normal">
+      <h2 class="delay-700 sm:text-[24px] sm:text-[14px] sm:font-normal">
         {{ $t("s4_2") }}
       </h2>
-      <h3 class="delay-150 sm:text-[24px] sm:text-[14px] sm:font-normal">
+      <h3 class="delay-800 sm:text-[24px] sm:text-[14px] sm:font-normal">
         {{ $t("s4_2_1") }}<br>{{ $t("s4_2_2") }}<br>{{ $t("s4_2_3") }}
       </h3>
       

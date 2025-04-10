@@ -2,9 +2,9 @@
   <div
     class="relative animate-show custom-width text-[#E9DFD6] h-full flex flex-col justify-start items-center sm:pt-40 pt-14 text-black sm:flex sm:flex-row sm:justify-center sm:items-center"
   >
-      <div class=" delay-[600ms] h-[520px] flex flex-col justify-start items-center sm:w-[400px]">
+      <div class=" delay-[600ms] pb-[10px] flex flex-col justify-start items-center sm:w-[400px]">
       <img
-      class="w-80 h-100 "
+      class="w-[15rem] h-100 "
       src="~assets/enolight代表.jpg"
       alt="EnoLight代表介绍背景图片"
       />

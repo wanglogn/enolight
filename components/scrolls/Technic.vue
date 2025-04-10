@@ -9,19 +9,19 @@ const s3_active_idx = ref(1);
 </script>
 <template>
   <div
-    class="relative animate-show custom-width text-[rgb(131,95,56)] h-full sm:pt-32 pt-14 lg:-translate-y-10 2xl:translate-y-0">
+    class="relative animate-show custom-width text-[rgb(131,95,56)] h-full sm:pt-32  lg:-translate-y-10 2xl:translate-y-0 pt-[80px] ">
     <div class="delay-500 flex justify-between items-center">
-      <h2 class="sm:text-[20px] text-[12px] font-semibold">
+      <h2 class="sm:text-[20px] text-[15px] font-semibold">
         {{ $t("s3_1") }}
       </h2>
     </div>
     <div class="delay-[600ms] flex justify-between">
-      <h2 class="sm:text-[20px] text-[12px] font-semibold">
+      <h2 class="sm:text-[20px] text-[15px] font-semibold">
         {{ $t("s3_1_2") }}
       </h2>
     </div>
     <div class="delay-[700ms] flex justify-between items-center">
-      <h2 class="sm:text-[20px] text-[12px] font-semibold">
+      <h2 class="sm:text-[20px] text-[15px] font-semibold">
         {{ $t("s3_1_3") }}
       </h2>
     </div>
@@ -99,7 +99,7 @@ const s3_active_idx = ref(1);
     </div>
 
     <!-- 移动主体 -->
-    <div class="delay-700 sm:hidden block animate-show bg-white rounded-2xl px-6 py-11 mt-12">
+    <div class="delay-700 sm:hidden block animate-show bg-white rounded-2xl px-6 py-6 mt-10">
       <ul class="flex flex-col justify-center items-center text-[19px] font-medium">
         <li class="border-b-2 border-[rgb(131,95,56)] pb-4 mb-6 w-full"
           :class="{ 'active-toggle': s3_active_idx === 1 }" @click="s3_active_idx = 1">

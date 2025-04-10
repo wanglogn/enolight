@@ -10,7 +10,7 @@
     >
     <!-- 用户信息表单 -->
     <div class="delay-[800ms] sm:mt-5 flex justify-center pt-2">
-      <form @submit.prevent="handleSubmit" class="space-y-4 w-full md:w-3/5">
+      <form @submit.prevent="handleSubmit" class="sm:space-y-4 w-full md:w-3/5">
         <div>
           <label for="company" class="block text-sm font-medium text-gray-700">
             {{ $t("company") }}</label
