@@ -29,9 +29,9 @@ const s3_active_idx = ref(1);
     <!-- pc主体 -->
     <!-- 第一段 -->
     <div
-      class="delay-700 mt-[8vh] sm:flex hidden animate-show h-[62vh] bg-white text-[rgb(131,95,56)] rounded-3xl overflow-hidden">
+      class="delay-710 mt-[8vh] sm:flex hidden animate-show h-[62vh] bg-white text-[rgb(131,95,56)] rounded-3xl overflow-hidden">
       <ul class="animate-show grow flex flex-col justify-center p-10 3xl:px-20">
-        <li class="delay-[900ms]" :class="{ 'active-toggle': s3_active_idx === 1 }" @click="s3_active_idx = 1">
+        <li class="delay-[720ms]" :class="{ 'active-toggle': s3_active_idx === 1 }" @click="s3_active_idx = 1">
           <div class="flex justify-between items-center mb-6">
             <span class="text-xl font-medium">{{ $t("s3_2_1") }}</span>
             <ChevronUpIcon class="w-6 transition" :class="{ 'rotate-180': s3_active_idx !== 1 }" />
@@ -45,7 +45,7 @@ const s3_active_idx = ref(1);
           </div>
         </li>
 
-        <li class="delay-[1000ms]" :class="{ 'active-toggle': s3_active_idx === 2 }" @click="s3_active_idx = 2">
+        <li class="delay-[730ms]" :class="{ 'active-toggle': s3_active_idx === 2 }" @click="s3_active_idx = 2">
           <div class="flex justify-between items-center my-6">
             <span class="text-xl font-medium">{{ $t("s3_4") }}</span>
             <ChevronUpIcon class="w-6 transition" :class="{ 'rotate-180': s3_active_idx !== 2 }" />
@@ -57,7 +57,7 @@ const s3_active_idx = ref(1);
           </div>
         </li>
 
-        <li class="delay-[1200ms]" :class="{ 'active-toggle': s3_active_idx === 3 }" @click="s3_active_idx = 3">
+        <li class="delay-[740ms]" :class="{ 'active-toggle': s3_active_idx === 3 }" @click="s3_active_idx = 3">
           <div class="flex justify-between items-center my-6">
             <span class="text-xl font-medium">{{ $t("s3_6") }}</span>
             <ChevronUpIcon class="w-6 transition" :class="{ 'rotate-180': s3_active_idx !== 3 }" />
@@ -69,7 +69,7 @@ const s3_active_idx = ref(1);
           </div>
         </li>
 
-        <li class="delay-[1300ms]" :class="{ 'active-toggle': s3_active_idx === 4 }" @click="s3_active_idx = 4">
+        <li class="delay-[750ms]" :class="{ 'active-toggle': s3_active_idx === 4 }" @click="s3_active_idx = 4">
           <div class="flex justify-between items-center my-6">
             <span class="text-xl font-medium">{{ $t("s3_7") }}</span>
             <ChevronUpIcon class="w-6 transition" :class="{ 'rotate-180': s3_active_idx !== 4 }" />
@@ -81,7 +81,7 @@ const s3_active_idx = ref(1);
           </div>
         </li>
 
-        <li class="delay-[1100ms]" :class="{ 'active-toggle': s3_active_idx === 5 }" @click="s3_active_idx = 5">
+        <li class="delay-[760ms]" :class="{ 'active-toggle': s3_active_idx === 5 }" @click="s3_active_idx = 5">
           <div class="flex justify-between items-center my-6">
             <span class="text-xl font-medium">{{ $t("s3_5") }}</span>
             <ChevronUpIcon class="w-6 transition" :class="{ 'rotate-180': s3_active_idx !== 5 }" />
