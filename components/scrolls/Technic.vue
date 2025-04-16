@@ -8,23 +8,17 @@ const { makeImgHost } = useImgHost();
 const s3_active_idx = ref(1);
 </script>
 <template>
+    
+    <!-- 背景层 -->
+    <div class=" inset-0 bg-[#eddec87a]  h-full">
   <div
     class="relative animate-show custom-width text-[rgb(131,95,56)] h-full sm:pt-32  lg:-translate-y-10 2xl:translate-y-0 pt-[80px] ">
-    <div class="delay-500 flex justify-between items-center">
-      <h2 class="sm:text-[20px] text-[15px] font-semibold">
-        {{ $t("s3_1") }}
+    <div class="delay-500 flex justify-between pl-5 sm:pl-10">
+      <h2 class="sm:text-[35px] text-[25px] font-semibold ">
+        {{ $t("server") }}
       </h2>
     </div>
-    <div class="delay-[600ms] flex justify-between">
-      <h2 class="sm:text-[20px] text-[15px] font-semibold">
-        {{ $t("s3_1_2") }}
-      </h2>
-    </div>
-    <div class="delay-[700ms] flex justify-between items-center">
-      <h2 class="sm:text-[20px] text-[15px] font-semibold">
-        {{ $t("s3_1_3") }}
-      </h2>
-    </div>
+   
 
     <!-- pc主体 -->
     <!-- 第一段 -->
@@ -94,8 +88,8 @@ const s3_active_idx = ref(1);
         </li>
       </ul>
 
-      <img loading="lazy" class="w-[380px] md:w-[450px] xl:w-[800px] 2xl:w-auto h-full object-cover object-center"
-        src="~/assets/aboutjob.jpg" />
+      <img loading="lazy" class="w-[380px] md:w-[450px]  h-full object-cover object-center"
+        src="https://images.pexels.com/photos/4549414/pexels-photo-4549414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
     </div>
 
     <!-- 移动主体 -->
@@ -169,20 +163,6 @@ const s3_active_idx = ref(1);
       </ul>
     </div>
   </div>
-
-  <picture>
-    <source media="(max-width: 639px)" :srcset="makeImgHost('/mobile/bg-3-20231212.webp')" />
-    <!-- 
-    <source
-      media="(min-width: 640px)"
-      :srcset="makeImgHost('/bg3-20231212.jpg?imageMogr2/format/webp')"
-      alt="业务内容介绍背景图片第三页_电脑版"
-    />
-  -->
-
-    <source media="(min-width: 640px)" srcset="
-        https://user0514.cdnw.net/shared/img/thumb/ai20246130000022image_TP_V.jpg
-      " alt="业务内容介绍背景图片第三页_电脑版" />
-    <img class="img-bg" :src="makeImgHost('/bg3-20231212.jpg?imageMogr2/format/webp')" alt="凭借光，重现光背景图片" />
-  </picture>
+</div>
+  
 </template>
