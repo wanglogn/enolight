@@ -7,7 +7,7 @@
       :class="currentPage === 1 && isInScrollPage ? '2xl:block hidden' : 'hidden'"></div>
 
     <!-- logo -->
-    <img class="h-[15px] sm:h-[20px] z-20 sm:relative absolute sm:left-0 sm:translate-x-0 transition duration-500"
+    <img class="h-[20px] sm:h-[20px] z-20 sm:relative absolute sm:left-0 sm:translate-x-0 transition duration-500"
       :class="[
         { invert: isInvert || !isCollapse },
         !isCollapse ? 'left-4 translate-x-0' : 'left-1/2 -translate-x-1/2',
@@ -22,6 +22,9 @@
         :class="[
           item.children ? `overflow-y-hidden flex flex-col relative` : '',
           isInScrollPage && currentPage === 7 ? 'hover:bg-black' : '',
+          // 下拉框背景色填充白色
+          isInScrollPage && currentPage === 8 ? 'hover:bg-black hover:text-white' : '',
+          isInScrollPage && currentPage === 5 ? 'hover:bg-[#202428] hover:text-white' : '',
           ['/privacy', '/protocol'].includes(useRoute().path)
             ? 'hover:bg-black'
             : '',
