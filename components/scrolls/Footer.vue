@@ -1,7 +1,7 @@
 <template>
   <!-- pc 和 sp 统一的 footer -->
   <div
-    class="custom-width flex flex-col h-full justify-between animate-show sm:pt-20 sm:pb-8 pt-4 absolute"
+    class="custom-width flex flex-col h-full justify-between animate-show sm:pt-20 sm:pb-8 pt-4"
   >
     <span
       class="delay-500 text-[26px] md:text-[26px] text-base font-medium flex items-center before:flex-grow after:flex-grow before:h-[2px] md:before:h-[2px] before:h-[1px] before:bg-black after:h-[2px] md:after:h-[2px] after:h-[1px] after:bg-black before:mr-[58px] md:before:mr-[58px] before:mr-[12px] after:ml-[58px] md:after:ml-[58px] after:ml-[12px] pt-[60px] sm:pt-0"
@@ -63,7 +63,9 @@
           <label class="block text-sm font-medium text-gray-700">{{
             $t("inquiry")
           }}</label>
-          <div class="mt-2 sm:space-y-2 grid grid-rows-2 grid-flow-col gap-2 sm:flex flex-col">
+          <div
+            class="mt-2 sm:space-y-2 grid grid-rows-2 grid-flow-col gap-2 sm:flex flex-col"
+          >
             <div class="flex items-start">
               <input
                 id="estimate"
@@ -134,7 +136,7 @@
         <div>
           <button
             type="submit"
-            class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="w-full inline-flex justify-center py-2 px-4 border shadow-sm text-sm font-medium rounded-md text-black border-[2px] border-[#b2b2b2] bg-[#ffffff] hover:bg-[rgba(237,237,237,0.3)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             {{ $t("submit") }}
           </button>
@@ -185,7 +187,7 @@ const handleSubmit = async () => {
     const inquiries = [];
     Object.keys(form.value.inquiry).forEach((key) => {
       if (form.value.inquiry[key]) {
-        inquiries.push(key);  // 这里的 key 就是复选框的名称
+        inquiries.push(key); // 这里的 key 就是复选框的名称
       }
     });
     formData.append("inquiry", inquiries.join(","));
@@ -194,7 +196,7 @@ const handleSubmit = async () => {
       "https://script.google.com/macros/s/AKfycbxacZ-oH4ozRRT1mvDvPndkjoAYUIHMBLcBXmINfMkYrnMHTPNU-O2QzEFMQ-lEz1p8/exec",
       {
         method: "POST",
-        mode: "no-cors",  
+        mode: "no-cors",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
@@ -202,8 +204,7 @@ const handleSubmit = async () => {
       }
     );
 
-
-      alert("提交成功");
+    alert("提交成功");
   } catch (error) {
     alert("提交失败，请重试1");
   }
