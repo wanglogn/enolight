@@ -20,7 +20,6 @@
             id="company"
             name="company"
             v-model="form.company"
-            required
             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           />
         </div>
@@ -45,7 +44,6 @@
             id="email"
             name="email"
             v-model="form.email"
-            required
             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           />
         </div>
@@ -58,7 +56,6 @@
             id="phone"
             name="phone"
             v-model="form.phone"
-            required
             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           />
         </div>
@@ -154,6 +151,9 @@
 import { ref } from "vue";
 import axios from "axios";
 import Copyright from "~/components/Copyright.vue";
+const { $message } = useNuxtApp()
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 const form = ref({
   company: "",
@@ -182,22 +182,21 @@ const handleSubmit = async () => {
   const missingFields = [];
 
   if (!form.value.company) {
-    missingFields.push("公司名称");
+    missingFields.push(t("company_name"));
   }
   if (!form.value.name) {
-    missingFields.push("姓名");
+    missingFields.push(t("name"));
   }
   if (!form.value.email) {
-    missingFields.push("邮箱");
+    missingFields.push(t("email"));
   }
   if (!form.value.phone) {
-    missingFields.push("电话");
+    missingFields.push(t("phone"));
   }
 
   // 如果有未填写的字段，显示提示
   if (missingFields.length > 0) {
-    console.log("未填写的字段：", missingFields);
-    alert(`请填写：${missingFields.join("、")}`);
+    $message.error(`${t("message_tip")}：${missingFields.join("、")}`)
     return;
   }
   try {
@@ -228,10 +227,25 @@ const handleSubmit = async () => {
         body: formData,
       }
     );
+    $message.success(t("message_success"),()=>{
 
-    alert("提交成功");
+      // 提交成功后清空表单数据
+      form.value = {
+        company: "",
+        name: "",
+        email: "",
+        phone: "",
+        inquiry: {
+          estimate: false,
+          influencer: false,
+          service: false,
+          other: false,
+        },
+        message: "",
+      };
+    });
   } catch (error) {
-    alert("提交失败，请重试1");
+    $message.error(t("message_error"))
   }
 };
 </script>
