@@ -3,46 +3,59 @@
     class="relative animate-show custom-width text-black h-full flex-col justify-center items-start "
   >
     <h2
-      class="delay-[600ms] font-normal text-[30px] delay-500 sm:text-[40px] pt-40 pt-14 border-b-2 pb-4"
+      class="delay-[600ms] font-normal text-[30px] delay-500 sm:text-[40px] pt-20 sm:pt-40  border-b-2 pb-4"
     >
       {{ $t("company_conent") }}
     </h2>
 
      <!-- 标题 -->
-    
-  <div class="flex flex-row justify-start items-start  pt-10">
-    <div class="flex flex-col w-[150px] gap-y-14 sm:[300px] sm:gap-y-12 animate-show">
-      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg ">
-        {{ $t("company_name") }}
-      </div>
-      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
-        {{ $t("IP") }}
-      </div>
-      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
-        {{ $t("CEO") }}
-      </div>
-      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
-        {{ $t("plus1") }}
-      </div>
-    </div>
-
-    <!-- 内容 -->
-    <div class="flex flex-col  gap-y-8 w-[250px] sm:w-full sm:gap-y-10 animate-show">
-      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
+    <div class="flex flex-col justify-start items-start pt-10">
+      <!-- list-div 1/4 -->
+      <div class="flex flex-row gap-x-8 animate-show">
+        <!-- right 1/2 -->
+        <div class="delay-[600ms]  font-normal w-[100px] sm:w-[150px] sm:text-[20px] text-lg flex justify-between items-start">
+          {{ $t("company_name") }}
+        </div>
+        <!-- left 2/2 -->
+        <div class="delay-[600ms] w-[210px] sm:w-[600px] font-normal sm:text-[20px] text-lg flex justify-between items-start">
         {{ $t("s6_hero") }}
+        </div>
       </div>
-      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
-        {{ $t("address1") }}<br>{{ $t("address2") }}
+      <!-- list-div 2/4 -->
+      <div class="flex flex-row gap-x-8 pt-10 sm:pt-12 animate-show">
+        <!-- right 1/2 -->
+        <div class="delay-[600ms] pt-[20px] font-normal w-[100px] sm:w-[150px] sm:text-[20px] text-lg flex justify-between items-start" >
+        {{ $t("IP") }}
+        </div>
+        <!-- left 2/2 -->
+        <div class="delay-[600ms] w-[210px] sm:w-[600px]  font-normal sm:text-[20px] text-lg flex justify-between items-start">
+        {{ $t("address1") }} <br>{{ $t("address2") }}
+        </div>
       </div>
-      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
+      <!-- list-div 3/4 -->
+      <div class="flex flex-row gap-x-8 pt-10 sm:pt-12 animate-show">
+        <!-- right 1/2 -->
+        <div class="delay-[600ms]  w-[100px] sm:w-[150px]  font-normal sm:text-[20px] text-lg flex justify-between items-start">
+        {{ $t("CEO") }}
+        </div>
+        <!-- left 2/2 -->
+        <div class="delay-[600ms] w-[210px] sm:w-[600px]  font-normal sm:text-[20px] text-lg flex justify-between items-start">
         {{ $t("CEOname") }}
+        </div>
       </div>
-      <div class="delay-[600ms] font-normal sm:text-[20px] text-lg">
+      <!-- list-div 4/4 -->
+      <div class="flex flex-row gap-x-8 pt-10 sm:pt-12 animate-show">
+        <!-- right 1/2 -->
+        <div class="delay-[600ms] w-[100px] sm:w-[150px] font-normal sm:text-[20px] text-lg flex justify-between items-start">
+        {{ $t("plus1") }}
+        </div>
+        <!-- left 2/2 -->
+        <div class="delay-[600ms] w-[210px] sm:w-[1000px] font-normal sm:text-[20px] text-lg flex justify-between items-start">
         {{ $t("plus1-1") }}
-      </div>
+        </div>
 
+      </div>
     </div>
-  </div>
   </div>
 </template>
 
