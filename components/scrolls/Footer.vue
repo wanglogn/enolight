@@ -13,20 +13,21 @@
       <form @submit.prevent="handleSubmit" class="sm:space-y-4 w-full md:w-3/5">
         <div>
           <label for="company" class="block text-sm font-medium text-gray-700">
-            {{ $t("company") }}</label
+            {{ $t("company") }}<span class="text-red-500">*</span></label
           >
           <input
             type="text"
             id="company"
             name="company"
             v-model="form.company"
+            required
             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           />
         </div>
         <div>
           <label for="name" class="block text-sm font-medium text-gray-700">{{
             $t("name")
-          }}</label>
+          }}<span class="text-red-500">*</span></label>
           <input
             type="text"
             id="name"
@@ -38,24 +39,26 @@
         <div>
           <label for="email" class="block text-sm font-medium text-gray-700">{{
             $t("email")
-          }}</label>
+          }}<span class="text-red-500">*</span></label>
           <input
             type="email"
             id="email"
             name="email"
             v-model="form.email"
+            required
             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           />
         </div>
         <div>
           <label for="phone" class="block text-sm font-medium text-gray-700">{{
             $t("phone")
-          }}</label>
+          }}<span class="text-red-500">*</span></label>
           <input
             type="tel"
             id="phone"
             name="phone"
             v-model="form.phone"
+            required
             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           />
         </div>
@@ -175,6 +178,28 @@ const handleInputBlur = () => {
 };
 
 const handleSubmit = async () => {
+  // 收集未填写的字段
+  const missingFields = [];
+
+  if (!form.value.company) {
+    missingFields.push("公司名称");
+  }
+  if (!form.value.name) {
+    missingFields.push("姓名");
+  }
+  if (!form.value.email) {
+    missingFields.push("邮箱");
+  }
+  if (!form.value.phone) {
+    missingFields.push("电话");
+  }
+
+  // 如果有未填写的字段，显示提示
+  if (missingFields.length > 0) {
+    console.log("未填写的字段：", missingFields);
+    alert(`请填写：${missingFields.join("、")}`);
+    return;
+  }
   try {
     const formData = new URLSearchParams();
     formData.append("company", form.value.company);

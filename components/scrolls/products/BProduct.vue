@@ -8,7 +8,7 @@
       src="~assets/enolight代表.jpg"
       alt="EnoLight代表介绍背景图片"
       />
-      <h4 class=" delay-[600ms] flex flex-col justify-center items-center" >{{ $t("daibiao3") }}</h4>
+      <h4 class=" flex flex-col justify-center items-center" >{{ $t("daibiao3") }}</h4>
     </div>
     
     <h3 class="delay-[600ms]  text-[18px] font-normal sm:w-[700px] sm:text-[25px] ">

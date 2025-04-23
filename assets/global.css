@@ -23,7 +23,7 @@
 html,
 body {
   /* height: 100vh; */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 body {
@@ -39,4 +39,13 @@ body {
   .custom-width {
     @apply w-full lg:w-[83.3%] px-4 lg:px-0 mx-auto;
   }
+
+  /* @font-face {
+    font-family: 'Copperplate';
+    src: url('~/assets/Copperplate/Copperplate\ W02\ Bold.woff') format('woff1'),
+         url('~/assets/Copperplate/Copperplate\ W02\ Bold.woff2') format('woff2'),
+         url('~/assets/Copperplate/Copperplate\ W02\ Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  } */
 }

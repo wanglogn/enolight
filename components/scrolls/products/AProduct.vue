@@ -1,13 +1,13 @@
 <template>
   <div
-    class="relative animate-show custom-width text-[#FFE4C0] sm:text-[#F6EFE6] h-full flex justify-between items-start sm:pt-40 pt-14 "
+    class="relative animate-show custom-width text-[#F6EFE6] h-full flex justify-between items-start sm:pt-40 pt-14 "
   >
-    <div class="delay-500 py-20">
+    <div class="delay-500 py-20 pl-[10px] sm:pl-[30px]">
       
       <h3 class="delay-600 sm:text-[24px] sm:text-[14px] sm:font-normal">
         {{ $t("s4_1_1") }}<br>{{ $t("s4_1_2") }}
       </h3><br>
-      <h2 class="delay-700 sm:text-[24px] sm:text-[14px] sm:font-normal">
+      <h2 class=" sm:text-[34px] text-[24px] font-semibold">
         {{ $t("s4_2") }}
       </h2>
       <h3 class="delay-800 sm:text-[24px] sm:text-[14px] sm:font-normal">
