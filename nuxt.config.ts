@@ -3,6 +3,15 @@ export default defineNuxtConfig({
   app: {
     baseURL: "./", // 设为相对路径，避免在服务器上路径错误
     cdnURL: "/", // 确保静态资源始终从根路径加载
+    head: {
+      link: [
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/logo.svg",
+        },
+      ],
+    },
   },
   nitro: {
     publicAssets: [

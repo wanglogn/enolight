@@ -12,7 +12,6 @@ const title = computed(() =>
     ? `EnoLight 官方网站 - ${route.meta.title}`
     : "EnoLight 官方网站"
 );
-
 // meta配置
 useSeoMeta({
   description: t("layouts.description"),
