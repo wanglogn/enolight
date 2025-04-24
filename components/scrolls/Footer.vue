@@ -20,7 +20,7 @@
             id="company"
             name="company"
             v-model="form.company"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto"
           />
         </div>
         <div>
@@ -32,7 +32,7 @@
             id="name"
             name="name"
             v-model="form.name"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto"
           />
         </div>
         <div>
@@ -44,7 +44,7 @@
             id="email"
             name="email"
             v-model="form.email"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto"
           />
         </div>
         <div>
@@ -56,7 +56,7 @@
             id="phone"
             name="phone"
             v-model="form.phone"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto"
           />
         </div>
         <div>
