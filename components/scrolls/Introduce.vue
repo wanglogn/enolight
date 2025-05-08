@@ -7,9 +7,9 @@
       class="sm:w-[200px] sm:h-[46px] w-[90px] h-[20px] delay-500 sm:mb-16 mb-8"
     /> -->
 
-    <h2 class="delay-700 sm:mb-8 mb-2 text-[18px] sm:text-[30px] py-5 sm:py-0 font-medium">{{ $t("s2_2") }}</h2>
-    <h2 class="delay-[800ms] sm:mb-8 mb-2 sm:text-[10px] sm:text-[15px]">{{ $t("s2_3") }}</h2>
-    <h2 class="delay-[900ms] sm:mb-20 mb-8 sm:text-[10px] sm:text-[15px]">{{ $t("s2_4") }}</h2>
+    <h2 class="delay-700 sm:mb-8 mb-2 text-[18px] sm:text-[30px] py-5 sm:py-0 sm:pb-[100px] font-medium">{{ $t("s2_2") }}</h2>
+    <h2 class="delay-[800ms] sm:mb-8 mb-2 sm:text-[25px]">{{ $t("s2_3") }}</h2>
+    <h2 class="delay-[900ms] sm:mb-20 mb-8 sm:text-[25px] sm:leading-[40px]">{{ $t("s2_4") }}</h2>
 
   </div>
 

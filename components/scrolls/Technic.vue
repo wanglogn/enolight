@@ -13,7 +13,7 @@ const s3_active_idx = ref(1);
     <div class=" inset-0 bg-[#eddec87a]  h-full">
   <div
     class="relative animate-show custom-width text-[rgb(131,95,56)] h-full sm:pt-32  lg:-translate-y-10 2xl:translate-y-0 pt-[80px] ">
-    <div class="delay-500 flex justify-between pl-5 sm:pl-10">
+    <div class="delay-500 flex justify-between pl-5 sm:pt-[40px] sm:pl-10">
       <h2 class="sm:text-[35px] text-[25px] font-semibold ">
         {{ $t("server") }}
       </h2>
@@ -23,7 +23,7 @@ const s3_active_idx = ref(1);
     <!-- pc主体 -->
     <!-- 第一段 -->
     <div
-      class="delay-710 mt-[8vh] sm:flex hidden animate-show h-[62vh] bg-white text-[rgb(131,95,56)] rounded-3xl overflow-hidden">
+      class="delay-710 mt-[45px] sm:flex hidden animate-show h-[62vh] bg-white text-[rgb(131,95,56)] rounded-3xl overflow-hidden">
       <ul class="animate-show grow flex flex-col justify-center p-10 3xl:px-20">
         <li class="delay-[720ms]" :class="{ 'active-toggle': s3_active_idx === 1 }" @click="s3_active_idx = 1">
           <div class="flex justify-between items-center mb-6">

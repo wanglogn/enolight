@@ -4,7 +4,7 @@
     class="animate-show custom-width font-normal text-sm flex flex-col translate-y-20 text-[rgb(131,95,56)]"
   >
     <h2
-      class="delay-700  text-[18px] sm:text-[35px] py-5  font-normal leading-6 sm:leading-[45px]"
+      class="delay-700  text-[18px] sm:text-[25px] py-5 sm:pb-[60px] font-normal leading-6 sm:leading-[45px]"
     >
       {{ $t("zhongri") }}<br>{{ $t("zhongri1") }}<br>{{ $t("zhongri2") }}<br>{{ $t("zhongri3") }}
     </h2>
@@ -17,19 +17,19 @@
     <h2 class="delay-[800ms] sm:mb-5 mb-2 text-[13px] sm:text-[20px] font-normal">
       {{ $t("server1_1") }}
     </h2>
-    <h2 class="delay-[800ms] sm:mb-5 mb-2 text-[18px] sm:text-[25px] font-medium">
+    <h2 class="delay-[800ms] sm:mb-5 mb-2 text-[18px] sm:text-[25px] font-medium sm:pt-[10px]">
       {{ $t("server2") }}
     </h2>
     <h2 class="delay-[800ms] sm:mb-5 mb-2 text-[13px] sm:text-[20px] font-normal">
       {{ $t("server2_1") }}
     </h2>
-    <h2 class="delay-[800ms] sm:mb-5 mb-2 text-[18px] sm:text-[25px] font-medium">
+    <h2 class="delay-[800ms] sm:mb-5 mb-2 text-[18px] sm:text-[25px] font-medium sm:pt-[10px]">
       {{ $t("server3") }}
     </h2>
     <h2 class="delay-[800ms] sm:mb-5 mb-2 text-[13px] sm:text-[20px] font-normal">
       {{ $t("server3_1") }}
     </h2>
-    <h2 class="delay-[800ms] sm:mb-5 mb-2 text-[18px] sm:text-[25px] font-medium">
+    <h2 class="delay-[800ms] sm:mb-5 mb-2 text-[18px] sm:text-[25px] font-medium sm:pt-[10px]">
       {{ $t("server4") }}
     </h2>
     <h2 class="delay-[800ms] sm:mb-5 mb-2 text-[13px] sm:text-[20px] font-normal">

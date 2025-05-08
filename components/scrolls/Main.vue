@@ -1,7 +1,7 @@
 <template>
-  <div class="absolute top-1/2 -translate-y-[100%] left-1/2 -translate-x-1/2 text-black flex flex-col">
+  <div class="absolute top-1/2 -translate-y-[100%] left-1/2 -translate-x-1/2 text-[#917b5f] flex flex-col">
     <div class="flex items-center justify-center sm:mb-7 mb-6">
-      <SvgoLogo :fontControlled="false" class="sm:h-[20px] h-[18px] text-black" />
+      <SvgoLogo :fontControlled="false" class="sm:h-[20px] h-[18px] text-[#917b5f]" />
     </div>
     <h1 class="sm:text-[56px] text-[32px] sm:leading-[56px] leading-[32px]  font-semibold flex space-x-6 items-center">
       <span class="shrink-0">{{ $t("s1_1") }}</span>

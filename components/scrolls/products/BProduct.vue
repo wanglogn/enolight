@@ -11,7 +11,7 @@
       <h4 class=" flex flex-col justify-center items-center" >{{ $t("daibiao3") }}</h4>
     </div>
     
-    <h3 class="delay-[600ms]  text-[18px] font-normal sm:w-[700px] sm:text-[25px] ">
+    <h3 class="delay-[600ms]  text-[18px] font-normal sm:w-[700px] sm:text-[25px] sm:leading-[60px]">
         {{ $t("daibiao") }}<br>{{ $t("daibiao1") }}<br>{{ $t("daibiao2") }}
       </h3>
     

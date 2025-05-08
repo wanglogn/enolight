@@ -10,7 +10,7 @@
     >
     <!-- 用户信息表单 -->
     <div class="delay-[800ms] sm:mt-5 flex justify-center pt-2">
-      <form @submit.prevent="handleSubmit" class="sm:space-y-4 w-full md:w-3/5">
+      <form @submit.prevent="handleSubmit" @focusout="handleInputBlur" class="sm:space-y-4 w-full md:w-3/5">
         <div>
           <label for="company" class="block text-sm font-medium text-gray-700">
             {{ $t("company") }}<span class="text-red-500">*</span></label
@@ -20,6 +20,7 @@
             id="company"
             name="company"
             v-model="form.company"
+            @blur="handleInputBlur"
             class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto"
           />
         </div>
@@ -32,7 +33,8 @@
             id="name"
             name="name"
             v-model="form.name"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto"
+            @blur="handleInputBlur"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto resize-none"
           />
         </div>
         <div>
@@ -44,7 +46,8 @@
             id="email"
             name="email"
             v-model="form.email"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto"
+            @blur="handleInputBlur"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto resize-none"
           />
         </div>
         <div>
@@ -56,7 +59,8 @@
             id="phone"
             name="phone"
             v-model="form.phone"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto"
+            @blur="handleInputBlur"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 overflow-auto resize-none"
           />
         </div>
         <div>
